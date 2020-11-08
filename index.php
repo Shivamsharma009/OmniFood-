@@ -361,13 +361,18 @@ service in the Bay Area. Keep up the great work!
 
                 <div class="row">
 
-                    <div class="form-message sucess">
-                        Thank You! Your message has been sent.
-                    </div>
+                    <?php
 
-                   <!-- <div class="form-message error">
-                        Oops! Something went wrong. please try again!
-                    </div> -->
+                    if($_GET['sucess'] == 1){
+                        echo "<div class = \"form-message sucess\"> Thank You ! Your Message has been sent. </div>";
+                    }
+
+                    if($_GET['sucess'] == -1){
+                        echo "<div class = \"form-message error\">  Oops! Something went wrong. please try again! </div>";
+                    }
+
+
+                    ?>
 
                 </div>
 
